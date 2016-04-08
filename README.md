@@ -1,5 +1,5 @@
 # pyBuzz
-A python script that sends weather forcast summary along with word of the day to your mobile phone
+A python script that sends weather forecast summary along with word of the day to your mobile phone
 
 ![](Screenshot.png)
 
