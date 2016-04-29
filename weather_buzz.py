@@ -17,15 +17,15 @@ def forcast_handle(lat,lng):
     return "WEATHER FORECAST: " + byHour.summary
 
 def textmyself(message):
-    sid = "AC2943bced271470a0b31a328d7266bba0"
-    token = "34845e7364b55d067fe4b00c75d7585f"
-    myNumber = "+919454028991"
-    twilioNumber = "+12318034148"
+    sid = "######################"
+    token = "######################"
+    myNumber = "######################"
+    twilioNumber = "######################"
     twilioClient=TwilioRestClient(sid,token)
     twilioClient.messages.create(body=message,from_=twilioNumber,to=myNumber)
 
 def main():
-    forcast= forcast_handle(25.594095,85.137565)
+    forcast= forcast_handle(25.594095,85.137565)   #insert coordinates of your area
     scrap_data= scrap()
     msg = forcast + '\n\n' + scrap_data
     textmyself(msg)  #send message to mobile
