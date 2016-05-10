@@ -19,10 +19,11 @@ def forcast_handle(lat,lng):
 def textmyself(message):
     sid = "######################"
     token = "######################"
-    myNumber = "######################"
+    ToSendNumbers = ["######################","##################"]  #multiple receiver
     twilioNumber = "######################"
     twilioClient=TwilioRestClient(sid,token)
-    twilioClient.messages.create(body=message,from_=twilioNumber,to=myNumber)
+    for number in ToSendNumbers:
+        twilioClient.messages.create(body=message,from_=twilioNumber,to=number)
 
 def main():
     forcast= forcast_handle(25.594095,85.137565)   #insert coordinates of your area
