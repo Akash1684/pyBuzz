@@ -29,5 +29,5 @@ To do
 * Adding subscription module that will allow multiple subscriber mobiles to recieve message simultaneously.
 
 <br></br>
-**Note**: To find longitude and latitude of your location [visit](http://www.latlong.net/)
+**Note**: Find longitude and latitude of your location @[visit](http://www.latlong.net/)
   
